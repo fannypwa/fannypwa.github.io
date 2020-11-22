@@ -12,24 +12,13 @@
   <tr>
     <h1> Calcular la Densidad </h1>
   </tr>
-  <tr>
-    <td colspan="3"><span id="resultado"></span></td>
-  </tr>
-
-  <div class ="numeros">
-  <tr>
-    <br><input type="text" placeholder="Ingresa la masa" id="Num1"></br>
-  </tr>
-</div>
-
-<div class ="numeros">
-  <tr>
-    <br><input type="text" placeholder="Ingresa el volumen" id="Num2"></br>
-  </tr>
+  Ingresa la masa: <input id="num1" type="number" />
+    Ingresa el volumen : <input id="num2" type="number" />
+    <p id="resultado" style="color: rgba(141, 0, 0, 0.842);"></p>
 </div>
 
 <div class ="calcular"><tr>
-  <td><button id="igual">Calcular la Densidad</button></td>
+  <input type="button" value="Calcular la Densidad" onclick="operaciones('densidad'); return false;" />
 </tr>
 </div>
  <footer><p>

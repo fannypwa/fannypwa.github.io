@@ -1,38 +1,42 @@
-var Num1;
-var Num2;
-var operacion;
+function operaciones(op)
+{
 
-function init(){
-    //variables
-    var resultado = document.getElementById('resultado');
-    var igual = document.getElementById('igual');
+    var ops = {
+      
 
-  }
-  division.onclick = function(e){
-    Num1 = resultado.textContent;
-    operacion = "/";
-    limpiar();
-}
-igual.onclick = function(e){
-    Num2 = resultado.textContent;
-    resolver();
-}
-function limpiar(){
-    resultado.textContent = "";
-  }
-  function resetear(){
-    resultado.textContent = "";
-    Num1 = 0;
-    NUm2 = 0;
-    operacion = "";
-  }
-  function resolver(){
-    var res = 0;
-    switch(operacion){
-      case "igual":
-        res = Num1 / Num2;
-        break;
+       densidad: function dividirNumeros(n1, n2) {
+            return (parseInt(n1) / parseInt(n2));
+        }
+
+
+    };
+
+
+
+    var num1 = document.getElementById("num1").value;
+    var num2 = document.getElementById("num2").value;
+
+    
+    //Comprobamos si se ha introducido números en las cajas
+    if (isNaN(parseFloat(document.getElementById('num1').value))) {
+        document.getElementById('resultado').innerHTML="<span style='color: red;'>Por favor, escriba el primer numero</span>";
+        document.getElementById("num1").innerText = "0";
+        document.getElementById("num1").focus();
+        } else if (isNaN(parseFloat(document.getElementById('num2').value))) {
+        document.getElementById('resultado').innerHTML="<span style='color: red;'>Por favor, escriba el segundo numero</span>";
+        document.getElementById("num2").innerText = "0";
+        document.getElementById("num2").focus();
     }
-    resetear();
-    resultado.textContent = res;
-  }
+    else {
+    //Si se han introducido los números en ámbas cajas, operamos:
+        switch(op) {
+            
+            case 'densidad':
+                var resultado = ops.densidad(num1, num2);
+                document.getElementById('resultado').innerHTML="<span style='color: green;'>"+resultado+"</span>";
+                break;
+
+        }
+    }
+
+}
