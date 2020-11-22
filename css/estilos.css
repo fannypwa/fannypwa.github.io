@@ -8,12 +8,11 @@
     border-radius: 25px;
   }
   
-  .numeros{
-    background-color :#8f02fa ;
+  .numeros {
+    background-color :#EACEFF ;
     padding: 1rem;
-    border: thick solid #e2a7e7;
+    border: thick solid #7354D6;
     margin: 1em;
-   
   }
   .calculadora td button{
     display:block;
