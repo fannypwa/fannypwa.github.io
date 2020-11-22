@@ -6,14 +6,18 @@
 <link type="text/css" href="estilo.css" rel="stylesheet">
 </head>
 
-<body >
+<body onload="init();">
 
 <table class="calculadora">
-<br></br>
-<input type="text" placeholder="Escribe la primera cantidad" id="Num1"><br></br>
-<input type="text" placeholder="Escribe la segunda cantidad" id="Num2"><br></br>
+<tr></tr>
+<tr>
+  <input type="text" placeholder="Escribe la primera cantidad" id="Num1"><br></br>
+</tr>
+<tr>
+  <input type="text" placeholder="Escribe la segunda cantidad" id="Num2"><br></br>
+</tr>
 
-<input type="button" name="name" value="Press me!" onclick="Pluss();s">
+<input type="button" name="name" value="Calcular la velocidad!" onclick="Pluss();s">
 </table>
 
   <script src="funcionalidad.js"></script>
