@@ -1,30 +1,36 @@
-var operandoa;
-var operandob;
+var Num1;
+var Num2;
 var operacion;
 
 function init(){
     //variables
     var resultado = document.getElementById('resultado');
+    var division = document.getElementById('division');
+
   }
-  densidad.onclick = function(e){
+  division.onclick = function(e){
     operandoa = resultado.textContent;
-    operacion = "Calcular la Densidad";
+    operacion = "/";
     limpiar();
+}
+igual.onclick = function(e){
+    operandob = resultado.textContent;
+    resolver();
 }
 function limpiar(){
     resultado.textContent = "";
   }
   function resetear(){
     resultado.textContent = "";
-    operandoa = 0;
-    operandob = 0;
+    Num1 = 0;
+    NUm2 = 0;
     operacion = "";
   }
   function resolver(){
     var res = 0;
     switch(operacion){
       case "igual":
-        res = parseFloat(operandoa) / parseFloat(operandob);
+        res = Num1 / Num2;
         break;
     }
     resetear();
