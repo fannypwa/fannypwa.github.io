@@ -16,9 +16,12 @@
   }
   .calcular{
     display:block;
-    width:80px;
-    height: 80px;
-    font-size: 25px;
+    margin:0 auto;
+    padding:30px;
+    background-color:#ca58c5;
+    width:500px;
+    height:500px;
+    border-radius: 30px;
   }
  
   #resultado{
