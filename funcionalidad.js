@@ -8,7 +8,7 @@ function init(){
   }
   densidad.onclick = function(e){
     operandoa = resultado.textContent;
-    operacion = "/";
+    operacion = "Calcular la Densidad";
     limpiar();
 }
 function limpiar(){
@@ -23,7 +23,7 @@ function limpiar(){
   function resolver(){
     var res = 0;
     switch(operacion){
-      case "calcular":
+      case "igual":
         res = parseFloat(operandoa) / parseFloat(operandob);
         break;
     }
