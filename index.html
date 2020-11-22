@@ -1,23 +1,28 @@
 <!DOCTYPE html>
-<html lang="es">
-  <h4 class="card-header"><strong>Datos de la categoría</strong></h4>              
-  <div class="card-body">
-    <form method="post" th:action="@{/view/categorias/guardar}" th:object="${categoria}">              
-      <div class="row">
-        <div class="col-md-6"> 
-          <div class="form-group">
-            <label for="nombre">Masa</label>
-            <input type="hidden">
-            <input type="text" class="form-control" id="nombre"  name="masa" placeholder="Escriba la masa" required="required">
-          </div>
-        </div>                
-      </div> 
-      <div class="row">
-        <div class="col-md-6"> 
-          <div class="form-group">
-            <label for="descripcion">Aceleracion</label>
-            <textarea class="form-control" name="aceleracion" id="descripcion" rows="2"></textarea>
-          </div> 
-        </div>                
-      </div> 
- <html>>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Calculadora </title>
+<link type="text/css" href="css/estilos.css" rel="stylesheet">
+</head>
+<body onload="init();">
+<table class="calculadora">
+<tr>
+  <td colspan="4"><span id="resultado"></span></td>
+</tr>
+<tr>
+  <td><button id="siete">7</button></td><td><button id="ocho">8</button></td><td><button id="nueve">9</button></td><td><button id="division">/</button></td>
+</tr>
+<tr>
+  <td><button id="cuatro">4</button></td><td><button id="cinco">5</button></td><td><button id="seis">6</button></td><td><button id="multiplicacion">*</button></td>
+</tr>
+<tr>
+  <td><button id="uno">1</button></td><td><button id="dos">2</button></td><td><button id="tres">3</button></td><td><button id="resta">-</button></td>
+</tr>
+<tr>
+  <td><button id="igual">=</button></td><td><button id="reset">C</button></td><td><button id="cero">0</button></td><td><button id="suma">+</button></td>
+</tr>
+</table>
+<script src="funcionalidad.js"></script>
+</body>
+</html>
