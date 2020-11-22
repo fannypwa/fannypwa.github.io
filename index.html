@@ -5,24 +5,19 @@
 <title>Calculadora con JavaScript</title>
 <link type="text/css" href="css/estilos.css" rel="stylesheet">
 </head>
-<body>
-  <div class ="Calculadora">
-  <input type="text" id="numero1" >
-  <input type="text" id="numero2" >
-  <button onclick="Calcular()">Velocidad</button>
-  <script>
-   function Calcular (){
-    var numero1 = document.getElementById("numero1").value;
-    var numero2 = document.getElementById("numero2").value;
- 
-    var velocidad = numero1 + numero2;
- 
-    document.writeln(velocidad)
-    
-   }
-  </script>
-  
- </body>
+<body onload="init();">
+  <div class="Calculadora">
+  <tr></tr>
+  <tr>
+    <input type="text" placeholder="Escribe la primera cantidad" id="Num1"><br></br>
+  </tr>
+  <tr>
+    <input type="text" placeholder="Escribe la segunda cantidad" id="Num2"><br></br>
+  </tr>
+  <table class="Calcular">  <input type="button" name="name" value="Calcular la velocidad!" onclick="Pluss();s">
+  </div>
+<script src="funcionalidad.js"></script>
+</body>
 </html>
 
 
