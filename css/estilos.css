@@ -13,6 +13,10 @@
     padding: 1rem;
     border: thick solid #e2a7e7;
     margin: 1em;
+    display:block;
+    width:70px;
+    height: 70px;
+    font-size: 25px;
   }
   .calculadora td button{
     display:block;
