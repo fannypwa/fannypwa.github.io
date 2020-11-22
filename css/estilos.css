@@ -1,7 +1,7 @@
 .Calculadora{
     display:block;
     margin:0 auto;
-    padding:30px;
+    padding:20px;
     background-color:#ca58c5;
     width:300px;
     height:300px;
@@ -15,7 +15,7 @@
     margin: 1em;
   }
   .calcular{
-    background-color :#6b12af ;
+    background-color :#71d7f7 ;
     padding: 2rem;
     border: thick solid #f805bb;
     margin: 1em;
