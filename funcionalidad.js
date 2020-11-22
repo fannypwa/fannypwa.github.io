@@ -5,16 +5,16 @@ var operacion;
 function init(){
     //variables
     var resultado = document.getElementById('resultado');
-    var division = document.getElementById('division');
+    var igual = document.getElementById('igual');
 
   }
   division.onclick = function(e){
-    operandoa = resultado.textContent;
+    Num1 = resultado.textContent;
     operacion = "/";
     limpiar();
 }
 igual.onclick = function(e){
-    operandob = resultado.textContent;
+    Num2 = resultado.textContent;
     resolver();
 }
 function limpiar(){
