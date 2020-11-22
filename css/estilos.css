@@ -20,8 +20,8 @@
   }
   .calculadora td button{
     display:block;
-    width:70px;
-    height: 70px;
+    width:200px;
+    height: 200px;
     font-size: 25px;
   }
  
