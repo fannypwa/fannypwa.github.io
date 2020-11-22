@@ -1,5 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
-  <h1>HOLA</h1>
-  <h2>saludos</h2>
+  <h4 class="card-header"><strong>Datos de la categoría</strong></h4>              
+  <div class="card-body">
+    <form method="post" th:action="@{/view/categorias/guardar}" th:object="${categoria}">              
+      <div class="row">
+        <div class="col-md-6"> 
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="hidden" th:field="*{id}">
+            <input type="text" class="form-control" id="nombre" th:field="*{nombre}" name="nombre" placeholder="Escriba el nombre de la categoria" required="required">
+          </div>
+        </div>                
+      </div> 
+      <div class="row">
+        <div class="col-md-6"> 
+          <div class="form-group">
+            <label for="descripcion">Descripción</label>
+            <textarea class="form-control" th:field="*{descripcion}" name="descripcion" id="descripcion" rows="2"></textarea>
+          </div> 
+        </div>                
+      </div> 
  <html>>
