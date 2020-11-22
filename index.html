@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 <meta charset="UTF-8">
 <title>Calculadora con JavaScript</title>
 <link type="text/css" href="css/estilos.css" rel="stylesheet">
 </head>
-<body>
-
-  
+<body onload="init();">
   <div class="Calculadora">
 
   <tr>
@@ -16,7 +15,7 @@
   <tr>
     <td colspan="3"><span id="resultado"></span></td>
   </tr>
-  
+
   <div class ="numeros">
   <tr>
     <br><input type="text" placeholder="Ingresa la masa" id="Num1"></br>
@@ -29,9 +28,10 @@
   </tr>
 </div>
 
-<div class ="calcular">
-   <table class="Calcular">  <input type="button"  name="calcular" value="Calcular la Densidad" onclick="Pluss();s">
- </div>
+<div class ="calcular"><tr>
+  <td><button id="igual">Calcular la Densidad</button></td>
+</tr>
+</div>
  <footer><p>
   <mi-footer></mi-footer>
 </p>
