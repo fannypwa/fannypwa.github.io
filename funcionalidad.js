@@ -23,7 +23,7 @@ function limpiar(){
   function resolver(){
     var res = 0;
     switch(operacion){
-      case "Calcular la Densidad":
+      case "calcular":
         res = parseFloat(operandoa) / parseFloat(operandob);
         break;
     }
