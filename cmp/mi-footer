@@ -1,7 +1,7 @@
-class MiFooter extends HTMLElement{
-   connectedCallback(){
- this.innerHTML =/*html*/
-     'Copryright &copy Castillo Castillo Estefania';
- }
+class MiFooter extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = /* html */
+      `Copyright &copy; Castillo Castillo Estefania`;
+  }
 }
-customElements.define("Mi-Footer,MiFooter")
+customElements.define("mi-footer", MiFooter);
