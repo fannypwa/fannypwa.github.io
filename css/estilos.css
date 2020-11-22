@@ -3,7 +3,7 @@
     margin:0 auto;
     padding:30px;
     background-color:#ca58c5;
-    width:500px;
+    width:400px;
     height:500px;
     border-radius: 25px;
   }
@@ -15,9 +15,9 @@
     margin: 1em;
   }
   .calcular{
-    background-color :#EACEFF ;
+    background-color :#6b12af ;
     padding: 1rem;
-    border: thick solid #7354D6;
+    border: thick solid #f805bb;
     margin: 1em;
   }
  
