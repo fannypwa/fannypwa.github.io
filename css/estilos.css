@@ -16,13 +16,13 @@
     display:block;
     width:70px;
     height: 70px;
-    font-size: 25px;
+    font-size: 20px;
   }
   .calculadora td button{
     display:block;
-    width:200px;
-    height: 200px;
-    font-size: 25px;
+    width:70px;
+    height: 70px;
+    font-size: 20px;
   }
  
   #resultado{
