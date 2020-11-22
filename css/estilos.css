@@ -2,8 +2,8 @@
     display:block;
     margin:0 auto;
     padding:20px;
-    background-color:#b929b2;
-    width:300px;
+    background-color:#ca58c5;
+    width:500px;
     height:500px;
     border-radius: 25px;
   }
@@ -22,7 +22,7 @@
     width:300px;
     height: 100px;
     line-height: 100px;
-    background-color:rgb(82, 57, 221);
+    background-color:rgb(110, 94, 201);
     border-radius: 25px;
     overflow-y: scroll;
   }
