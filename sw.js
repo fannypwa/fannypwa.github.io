@@ -1,4 +1,4 @@
-onst CACHE = "fannypwa-2.00";
+onst CACHE = "fannypwa-1.00";
 
 /**  Archivos requeridos para que la aplicación funcione fuera de línea. */
 const ARCHIVOS = [
@@ -6,10 +6,10 @@ const ARCHIVOS = [
   "css/estilos.css",
   "img/icono256.png",
   "img/icono1024.png",
-  "img/icono2048.png",
+  "img/2048.png",
   "favicon.ico",
   "index.html",
-  "manifest.json",
+  "sw.js",
   '/'
 ];
 
