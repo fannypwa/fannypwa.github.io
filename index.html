@@ -6,34 +6,38 @@
 <title>Calculadora con JavaScript</title>
 <link type="text/css" href="css/estilos.css" rel="stylesheet">
 </head>
-<body onload="init();">
+<body >
   <div class="Calculadora">
 
   <tr>
     <h1> Calcular la Densidad </h1>
   </tr>
+
   <div class ="numeros"><tr>
   Ingresa la masa: <input id="num1" type="number" />
 </tr>
 </div>
+
 <div class ="numeros"><tr>
     Ingresa el volumen : <input id="num2" type="number" />
   </tr>
 </div>
+
 <div class ="numeros"><tr>
     <p id="resultado" style="color: rgba(141, 0, 0, 0.842);"></p>
   </tr>
 </div>
 
-</div>
 <div class ="calcular"><tr>
   <input type="button" value="Calcular la Densidad" onclick="operaciones('densidad'); return false;" />
 </tr>
 </div>
+
  <footer><p>
   <mi-footer></mi-footer>
 </p>
 </footer>
+
   </div>
 <script src="funcionalidad.js"></script>
 </body>
