@@ -2,7 +2,7 @@
     display:block;
     margin:0 auto;
     padding:30px;
-    background-color:#ae03f1;
+    background-color:#c759f3;
     width:300px;
     height:500px;
     border-radius: 25px;
@@ -11,13 +11,13 @@
   .numeros {
     background-color :#e9acf8 ;
     padding: 1rem;
-    border: thick solid #0cdefa;
+    border: thick solid #fa0c8f;
     margin: 1em;
   }
   .calcular{
-    background-color :#71d7f7 ;
+    background-color :#74f0c7 ;
     padding: 1rem;
-    border: thick solid #f805bb;
+    border: thick solid #fd4884;
     margin: 1em;
   }
  
