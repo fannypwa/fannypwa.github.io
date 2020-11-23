@@ -7,7 +7,7 @@ const CACHE = "fannypwa-1.00";
 
 /**  Archivos requeridos para que la aplicación funcione fuera de línea. */
 const ARCHIVOS = [
-  "cmp/mi-footer.js",
+"cmp/mi-footer.js",
   "css/estilos.css",
   "img/icono256.png",
   "img/icono1024.png",
