@@ -20,17 +20,6 @@
     border: thick solid #f805bb;
     margin: 1em;
   }
-  #resultado{
-    display:block;
-    text-align: center;
-    font-size: 10px;
-    margin-bottom: 10px;
-    width:100px;
-    height: 50px;
-    line-height: 50px;
-    background-color:rgb(199, 1, 100);
-    border-radius: 25px;
-    overflow-y: scroll;
-  }
+ 
  
   
