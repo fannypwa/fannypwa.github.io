@@ -1,7 +1,7 @@
 class MiFooter extends HTMLElement {
   connectedCallback() {
     this.innerHTML = /* html */
-      'Copyright & copy; Castillo Castillo Estefania';
+      `Copyright &copy; Gilberto Pacheco Gallegos`;
   }
 }
 customElements.define("mi-footer", MiFooter);
