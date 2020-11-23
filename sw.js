@@ -11,7 +11,7 @@ const ARCHIVOS = [
   "css/estilos.css",
   "img/icono256.png",
   "img/icono1024.png",
-  "img/icono2048.png",
+  "img/2048.png",
   "js/registraServiceWorker.js",
   "favicon.ico",
   "index.html",
