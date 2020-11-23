@@ -3,7 +3,7 @@
  * se reinstale. Normalmente se cambia el número en el nombre del caché cuando
  * cambia el contenido de los archivos. Espera 11 minutos después de hacer los
  * cambios en tu sitio, para depués actualizar este archivo. */
-const CACHE = "dmppwa-1.00";
+const CACHE = "fannypwa-1.00";
 
 /**  Archivos requeridos para que la aplicación funcione fuera de línea. */
 const ARCHIVOS = [
@@ -11,7 +11,7 @@ const ARCHIVOS = [
   "css/estilos.css",
   "img/icono256.png",
   "img/icono1024.png",
-  "img/icono2048.png",
+  "img/2048.png",
   "js/registraServiceWorker.js",
   "favicon.ico",
   "index.html",
