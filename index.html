@@ -20,15 +20,155 @@
 
 <meta charset="UTF-8">
 <title>Calculadora con JavaScript</title>
-
-
-
 </head>
+  <style>
+
+    :root {
+     --color-primario: black;
+     --color-primario-fondo: #2f9de7;
+     --color-contenido: black;
+     --color-contenido-fondo: white;
+     --color-control-sin-foco: gray;
+     --color-control-con-foco: #2d2d44;
+     --color-control-error: #b00020;
+     --color-control-fondo: #eeeeee;
+     --color-active: #4646462c;
+     --font-family: -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+     color: var(--color-contenido);
+     background-color: var(--color-contenido-fondo);
+     font-family: var(--font-family);
+   }
+
+   body {
+     margin: 0;
+     
+   }
+
+   header {
+     color: var(--color-primario);
+     background-color: var(--color-primario-fondo);
+     position: sticky;
+     top: 0;
+     z-index: 1;
+   }
+
+   .toolbar {
+     display: flex;
+     padding: 1rem;
+     position: relative;
+   }
+
+
+   .toolbar h1 {
+     margin: 0 auto 0 0;
+     padding: 0;
+     font-size: 1.25rem;
+   }
+
+   body.ios .toolbar h1 {
+     margin: 0 auto 0 auto;
+   }
+
+   body.ios .toolbar .acciones {
+     position: absolute;
+     top: 1rem;
+     right: 1rem;
+   }
+
+   .toolbar button {
+     border: none;
+     padding: 0;
+     margin: 0 0 0 1.5rem;
+     background-color: transparent;
+     outline: none;
+   }
+
+   .toolbar button:active {
+     background-color: var(--color-active);
+   }
+
+   .contenido {
+     padding: 0 1rem;
+   }
+
+   campo-dinámico {
+     display: block;
+     position: relative;
+     color: var(--color-control-sin-foco);
+     background-color: var(--color-control-fondo);
+     border-top-left-radius: 4px;
+     border-top-right-radius: 4px;
+     margin: 1rem 0;
+     padding: 1.25rem 0 0 0;
+   }
+
+   campo-dinámico label {
+     position: absolute;
+     top: 1.75rem;
+     left: 1rem;
+     font-size: 1rem;
+     color: var(--color-control-sin-foco);
+     transition: 0.7s ease-in;
+   }
+
+   campo-dinámico .control_sin_foco+label,
+   campo-dinámico :focus+label {
+     top: 0.5rem;
+     font-size: 0.75rem;
+   }
+
+   campo-dinámico select,
+   campo-dinámico input,
+   campo-dinámico textarea {
+     box-sizing: border-box;
+     background-color: transparent !important;
+     padding: 0.5rem 1rem 0.5rem 1rem;
+     font-size: 1rem;
+     font-family: var(--font-family);
+     border: none;
+     border-bottom: 2px solid var(--color-control-sin-foco);
+     resize: none;
+     outline: none;
+     width: 100%;
+     transition: 0.7s ease-in;
+   }
+
+   campo-dinámico small {
+     display: block;
+     height: 1em;
+     font-size: 0.75rem;
+     padding-left: 1rem;
+     background-color: var(--color-contenido-fondo);
+     transition: 0.7s ease-in;
+   }
+
+   campo-dinámico :focus+label {
+     color: var(--color-control-con-foco);
+   }
+
+   campo-dinámico select:focus,
+   campo-dinámico input:focus,
+   campo-dinámico textarea:focus {
+     border-bottom-color: var(--color-control-con-foco);
+   }
+
+   campo-dinámico select:invalid,
+   campo-dinámico input:invalid,
+   campo-dinámico textarea:invalid {
+     border-bottom-color: var(--color-control-error);
+   }
+
+   campo-dinámico :invalid+label,
+   campo-dinámico :invalid~small {
+     color: var(--color-control-error);
+   }
+ </style>
 <body >
-  
+  <div class ="toolbar">
   <tr>
     <h1> Calcular la Densidad </h1>
   </tr>
+ </div>
 
   <tr>
     <h2> D=M/V </h2>
