@@ -104,7 +104,7 @@
      padding: 0 1rem;
    }
 
-   campo-dinámico {
+   .campo-dinámico {
      display: block;
      position: relative;
      color: var(--color-control-sin-foco);
@@ -147,35 +147,8 @@
    }
    
 
-   campo-dinámico small {
-     display: block;
-     height: 1em;
-     font-size: 0.75rem;
-     padding-left: 1rem;
-     background-color: var(--color-contenido-fondo);
-     transition: 0.7s ease-in;
-   }
 
-   campo-dinámico :focus+label {
-     color: var(--color-control-con-foco);
-   }
 
-   campo-dinámico select:focus,
-   campo-dinámico input:focus,
-   campo-dinámico textarea:focus {
-     border-bottom-color: var(--color-control-con-foco);
-   }
-
-   campo-dinámico select:invalid,
-   campo-dinámico input:invalid,
-   campo-dinámico textarea:invalid {
-     border-bottom-color: var(--color-control-error);
-   }
-
-   campo-dinámico :invalid+label,
-   campo-dinámico :invalid~small {
-     color: var(--color-control-error);
-   }
  </style>
   <header>
   <div class ="toolbar">
@@ -189,11 +162,11 @@
     <h2> D=M/V </h2>
   </tr>
       
-<campo-dinámico >
+< div class="campo-dinámico" >
   Ingresa la masa: <input id="num1" type="number" />
   </campo-dinámico>
    
-  <campo-dinámico>
+  <div class="campo-dinámico">
   Ingresa el volumen : <input id="num2" type="number" />
 </campo-dinámico>
       
