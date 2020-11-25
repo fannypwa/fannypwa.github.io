@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html>
-<head>
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AHJP - PWA</title>
+  <script src="js/registraServiceWorker.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+  <!-- Ícono para la página web. Debe ponerse en la raíz de la página. -->
   <link rel="icon" sizes="32x32" href="favicon.ico">
 
   <!-- Color de la barra de navegación de Chrome en dispositivos móviles. -->
@@ -8,16 +16,19 @@
 
   <!-- Configuración de la PWA: Chrome y Edge. -->
   <link rel="manifest" href="manifest.json">
-  <meta name="apple-mobile-web-app-title" content="fannypwa">
+
+  <!-- Configuración para Web Clip en Safari. -->
+  <meta name="apple-mobile-web-app-title" content="dmppwa">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  <link rel="apple-touch-icon" href="img/2048.png">
+  <link rel="apple-touch-icon" href="img/icono2048.png">
   <link rel="apple-touch-icon" sizes="256x256" href="img/icono256.png">
   <link rel="apple-touch-icon" sizes="1024x1024" href="img/icono1024.png">
   <link rel="apple-touch-icon" sizes="2048x2048" href="img/2048.png">
 
   <script type="module" src="cmp/mi-footer.js"></script>
   <link rel="stylesheet" href="css/estilos.css">
+  
 
 <meta charset="UTF-8">
 <title>Calculadora con JavaScript</title>
@@ -27,7 +38,7 @@
 
     :root {
      --color-primario: black;
-     --color-primario-fondo: #2f9de7;
+     --color-primario-fondo: #FF0080;
      --color-contenido: black;
      --color-contenido-fondo: white;
      --color-control-sin-foco: gray;
