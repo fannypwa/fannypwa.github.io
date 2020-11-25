@@ -41,7 +41,7 @@
      --color-primario-fondo: #FF0080;
      --color-contenido: black;
      --color-contenido-fondo: white;
-     --color-control-sin-foco: gray;
+     --color-control-sin-foco: #D29BFD;
      --color-control-con-foco: #2d2d44;
      --color-control-error: #b00020;
      --color-control-fondo: #eeeeee;
@@ -131,6 +131,21 @@
    }
 
    campo-dinámico select,
+   campo-dinámico input,
+   campo-dinámico textarea {
+     box-sizing: border-box;
+     background-color: transparent !important;
+     padding: 0.5rem 1rem 0.5rem 1rem;
+     font-size: 1rem;
+     font-family: var(--font-family);
+     border: none;
+     border-bottom: 2px solid var(--color-control-sin-foco);
+     resize: none;
+     outline: none;
+     width: 100%;
+     transition: 0.7s ease-in;
+   }
+    campo-dinámico select,
    campo-dinámico input,
    campo-dinámico textarea {
      box-sizing: border-box;
